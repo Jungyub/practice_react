@@ -1,15 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
+import SpinBox from "../../components/SpinBox";
 
 const PageHome = () => {
   return (
     <HomeContainer>
-      <div>123</div>
+      <SpinBox />
+      <SpinBox />
+      <SpinBox />
     </HomeContainer>
   );
 };
 
 export default PageHome;
 
-const HomeContainer = styled.div``;
+const HomeContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
